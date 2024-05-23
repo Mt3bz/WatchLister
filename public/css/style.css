@@ -1,0 +1,194 @@
+*{
+  box-sizing:  border-box;
+}
+
+:root{
+  --primary-color: #FCF6F5;
+  --secondary-color: #12296c;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+  background-image: url(../img/noise-bg.png);
+  margin: 0;
+
+}
+
+li{
+  font-size: 1.5rem;
+}
+
+
+.movie{
+  width: 300px;
+  margin: 1rem;
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px rgb(0, 0, 0 , 1);
+  background-color: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.movie{
+  width: 300px;
+  margin: 1rem;
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px rgb(0, 0, 0 , 1);
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.movie:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.watch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btnLibrary {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.815);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  
+}
+
+.movie:hover .btnLibrary {
+  opacity: 1;
+  cursor: pointer;  /* Add cursor: pointer on hover */
+}
+
+
+.movie img{
+  width: 100%;
+  pointer-events: none;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-info{
+  color: black;
+  padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info h3{
+    font-family: "Sedan SC", serif;
+  margin-top: 0px;
+}
+
+.rate{
+  position: absolute;
+  top: 1.2em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px rgb(0, 0, 0 , 1);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.imdb{
+  position: absolute;
+  left: 1px;
+}
+
+
+.pagination{
+
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mypagination-btn1{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.2px 4px 5px rgb(0, 0, 0 , 1);
+  margin: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: 1px hsl(0, 0%, 100%) solid;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mypagination-btn1:hover{
+  background-color: hsl(0, 0%, 81%);
+}
+
+h1{
+  display: inline-block;
+  position: relative;
+  left: 41%;
+  box-shadow: 0.2px 4px 5px rgb(0, 0, 0 , 1);
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 500;
+}
+
+
+p{
+  padding: 10px;
+  font-size: 2rem;
+}
+
+
+a{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.noMoive{
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcccc;
+  color: #ff0000 !important;; 
+  border-radius: 3px;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}

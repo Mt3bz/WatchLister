@@ -1,0 +1,47 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 25% 25%;
+    background-size: auto;
+    margin: 0;
+}
+
+
+.explores{
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    color: hsla(0, 0%, 100%, 0.89);
+    font-size: 4rem;
+}
+
+p {
+    color: hsl(46, 77%, 79%);
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
