@@ -63,9 +63,6 @@ Contributions are welcome! If you have any ideas, suggestions, or bug fixes, ple
 
 Please follow the [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
-## License
-
-This project is licensed under the [License Name]. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
