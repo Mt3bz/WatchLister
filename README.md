@@ -33,8 +33,8 @@ Movie Watchlist is a web application developed as part of a web course. It allow
 
 
 2. Install the dependencies:
-npm install
-npm install nodemon
+- npm install
+- npm install nodemon
 
 
 
