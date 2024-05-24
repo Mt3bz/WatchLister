@@ -64,5 +64,5 @@ npm start
 ![Round-Edges](https://github.com/Mt3bz/WatchLister/assets/60493146/eb7d91d9-97b9-4940-937f-51c465b32b74)
 
 ## Team Memeber
-Muteb Alshuaibi
-Haroon Alghamdi
+- Muteb Alshuaibi
+- Haroon Alghamdi
