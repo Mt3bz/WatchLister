@@ -10,7 +10,6 @@ Movie Watchlist is a web application developed as part of a web course. It allow
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Contact](#contact)
 
 ## Features
 
@@ -64,7 +63,3 @@ Contributions are welcome! If you have any ideas, suggestions, or bug fixes, ple
 Please follow the [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 
-## Contact
-
-- Muteb Alshuaibi
-- mt3b_c@hotmail.com
