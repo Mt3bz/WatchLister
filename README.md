@@ -1,4 +1,4 @@
-# Movie Watchlist
+![WatchLister](https://github.com/Mt3bz/WatchLister/assets/60493146/77a392ab-758c-4939-9607-e7b596484db1)# Movie Watchlist
 
 
 Movie Watchlist is a web application developed as part of a web course. It allows users to create an account, login, and maintain a personalized watchlist of movies. Users can search for movies using an API key and add them to their watchlist for future reference.
@@ -10,6 +10,7 @@ Movie Watchlist is a web application developed as part of a web course. It allow
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [ScreenShots](#screenshots)
 
 ## Features
 
@@ -56,10 +57,10 @@ npm start
 
 5. Remove movies from your watchlist by clicking the "Remove" button next to each movie.
 
-## Contributing
+## ScreenShots
 
-Contributions are welcome! If you have any ideas, suggestions, or bug fixes, please open an issue or submit a pull request.
-
-Please follow the [Contributing Guidelines](CONTRIBUTING.md) for more details.
+![Home](https://github.com/Mt3bz/WatchLister/assets/60493146/bb5d2635-c852-4b4d-8052-78ad82d1dd3c)
+![WatchLister](https://github.com/Mt3bz/WatchLister/assets/60493146/dec2ffcf-0396-40dc-b48f-38054f925f5d)
+![Round-Edges](https://github.com/Mt3bz/WatchLister/assets/60493146/eb7d91d9-97b9-4940-937f-51c465b32b74)
 
 
