@@ -9,7 +9,7 @@ Movie Watchlist is a web application developed as part of a web course. It allow
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Team Memeber](#team_member)
+- [Team Memeber](#team-memeber)
 - [ScreenShots](#screenshots)
 
 ## Features
