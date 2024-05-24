@@ -39,9 +39,11 @@ npm install
 
 3. Set up the MongoDB database. Update the database connection details in the project configuration files.
 
-4. Obtain an API key for movie data. Update the API key in the project configuration files [TMDB Site].
+4. Obtain an API key for movie data. Update the API key in the project configuration files [TMDB Site](https://www.themoviedb.org/).
 
-5. Start the application:
+5. Change API_KEY in Script.js 
+
+6. Start the application:
 npm start
 
 
