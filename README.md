@@ -34,18 +34,18 @@ Movie Watchlist is a web application developed as part of a web course. It allow
 
 2. Install the dependencies:
 npm install
+npm install nodemon
 
 
 
-3. Set up the MongoDB database. Update the database connection details in the project configuration files.
+4. Set up the MongoDB database. Update the database connection details in the project configuration files.
 
-4. Obtain an API key for movie data. Update the API key in the project configuration files [TMDB Site](https://www.themoviedb.org/).
+5. Obtain an API key for movie data. Update the API key in the project configuration files.
 
-5. Change API_KEY in Script.js 
+6. Change API_KEY in Script.js , get the key from [TMDB Site](https://www.themoviedb.org/).
 
-6. Start the application:
+7. Start the application:
 npm start
-
 
 ## Usage
 
