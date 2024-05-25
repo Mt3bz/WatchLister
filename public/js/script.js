@@ -160,18 +160,4 @@ function addToLibrary(title, poster_path, vote_average) {
     },
     body: JSON.stringify({ title, poster_path, vote_average })
   })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Error adding movie to library');
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log('Movie added to library:', data);
-      // Handle success message or update UI
-    })
-    .catch(error => {
-      console.error('Error adding movie to library:', error);
-      // Handle error message
-    });
 }
