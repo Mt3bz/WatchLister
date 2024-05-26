@@ -14,6 +14,11 @@
 <body>
   <%- include('./partials/header.ejs')  %>
   <h1>Popular Movies</h1>
+  <% if (flash && flash.length > 0) { %>
+    <div class="error-message" role="alert">
+      <%= flash %>
+    </div>
+  <% } %>
   <main id="main">
 
     <div class="movie">
@@ -35,7 +40,7 @@
   </main>
   
   <div class="pagination">
-    <button class="mypagination-btn1" id="previousButton" onclick="previousPage()" <% if (currentPage === 1) { %>disabled<% } %>>Previous</button>
+    <button class="mypagination-btn1" id="previousButton" onclick="previousPage()">Previous</button>
     <button class="mypagination-btn1" id="nextButton" onclick="nextPage()">Next</button>
   </div>
 
