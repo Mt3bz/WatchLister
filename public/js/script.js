@@ -1,6 +1,5 @@
 // TMDB
-
-const API_KEY = 'api_key=YOUR_API-KEY';
+const API_KEY = 'api_key=8ecd4378c84d4b83f4396c803c097e16';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
@@ -8,6 +7,7 @@ const searchURL = BASE_URL + '/search/movie?' + API_KEY;
 const header = document.getElementById('header');
 const main = document.getElementById('main');
 let currentPage = 1; // Track the current page
+
 
 const options = {
   method: 'GET',
@@ -43,7 +43,13 @@ function getMovies(url) {
       if (data.results.length !== 0) {
         showMovies(data.results);
         console.log(data.results);
-        updatePagination(data.page, data.total_pages); // Update pagination
+
+        if (currentPage === 1) {
+          previousButton.disabled = true; // Disable previous button
+        } else {
+          previousButton.disabled = false; // Enable previous button
+        }
+
       } else {
         main.innerHTML = `<h1 class"no-results"> No Results Found.</h1>`;
       }
@@ -95,36 +101,6 @@ function showMovies(data) {
 
 }
 
-// Assuming you have a variable currentPage representing the current page
-
-function updatePagination(currentPage, totalPages) {
-  const previousButton = document.getElementById('previousButton');
-  const nextButton = document.getElementById('nextButton');
-
-  if (currentPage === 1) {
-    previousButton.disabled = true; // Disable previous button
-  } else {
-    previousButton.disabled = false; // Enable previous button
-  }
-
-  previousButton.addEventListener('click', () => {
-    if (currentPage > 1) {
-      currentPage--; // Update currentPage value
-      updatePagination(currentPage, totalPages); // Update pagination with new currentPage
-      const url = `${API_URL}&page=${currentPage}`;
-      getMovies(url);
-    }
-  });
-
-  nextButton.addEventListener('click', () => {
-    if (currentPage < totalPages) {
-      currentPage++; // Update currentPage value
-      updatePagination(currentPage, totalPages); // Update pagination with new currentPage
-      const url = `${API_URL}&page=${currentPage}`;
-      getMovies(url);
-    }
-  });
-}
 
 // Go to the previous page
 function previousPage() {
